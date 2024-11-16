@@ -1,3 +1,10 @@
+
+
+
+
+![352691183-45f4ef12-c5b5-4247-9d43-356b5dfb671b](https://github.com/user-attachments/assets/2164eb5d-4bb0-499a-85a3-b4521c536be4)
+
+
 # Web-app-DevOps
 This project demonstrates the deployment of a web application using DevOps practices and tools to ensure efficient, scalable, and automated application delivery. 
 Below are the key steps and technologies implemented in the project:
