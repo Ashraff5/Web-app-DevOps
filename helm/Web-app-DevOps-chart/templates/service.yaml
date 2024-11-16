@@ -1,0 +1,15 @@
+# Service for the application
+apiVersion: v1
+kind: Service
+metadata:
+  name: Web-app-DevOps
+  labels:
+    app: Web-app-DevOps
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+  selector:
+    app: Web-app-DevOps
+  type: ClusterIP
