@@ -1,0 +1,22 @@
+# This is a sample deployment manifest file for a simple web application.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Web-app-DevOps
+  labels:
+    app: Web-app-DevOps
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Web-app-DevOps
+  template:
+    metadata:
+      labels:
+        app: Web-app-DevOps
+    spec:
+      containers:
+      - name: Web-app-DevOps
+        image: Ashraff5/Web-app-DevOps::{{ .Values.image.tag }}
+        ports:
+        - containerPort: 8080
