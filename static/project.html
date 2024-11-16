@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Project - Ashraff</title>
+    <style>
+        /* General Reset */
+        body, ul, li, p, h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: #0073e6;
+            margin-bottom: 10px;
+        }
+
+        section ul {
+            list-style: none;
+            margin: 15px 0;
+            padding: 0;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            padding-left: 20px;
+            text-indent: -20px;
+            position: relative;
+        }
+
+        section ul li:before {
+            content: "✔";
+            color: #0073e6;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #ff5733;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            background-color: #f4f4f9;
+            border-top: 1px solid #ddd;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul li strong {
+            color: #0073e6;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #ff5733;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+  body, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #0073e6;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+   <header>
+        <nav>
+            <ul>
+                <li><a href="About.html">Home</a></li>
+                
+                <li><a href="project.html">Project</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+  <div class="container">
+        <center>
+            <h1>DevOps Project Overview</h1>
+        </center>
+        
+        <section>
+            <h2>Project Description</h2>
+            <p>
+                This project demonstrates my proficiency in deploying a modern web application with a <span class="highlight">DevOps workflow</span>. 
+                I utilized a range of tools and technologies to containerize, deploy, and manage the application in a cloud-native environment.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Key Steps</h2>
+            <ul>
+                <li>
+                    <span class="highlight">Containerization:</span> Created a <strong>Dockerfile</strong> to containerize the web application, ensuring portability and consistency across environments.
+                </li>
+                <li>
+                    <span class="highlight">Docker Registry:</span> Built the Docker image and pushed it to a secure container registry for centralized access.
+                </li>
+                <li>
+                    <span class="highlight">Kubernetes Manifest Repo:</span> Organized Kubernetes manifests under a <code>k8s/manifests</code> repository to manage configurations.
+                </li>
+                <li>
+                    <span class="highlight">Kubernetes Cluster:</span> Set up a <strong>Kubernetes cluster</strong> using <strong>Amazon EKS</strong>, ensuring scalability and reliability for the application.
+                </li>
+                <li>
+                    <span class="highlight">Ingress Controller:</span> Configured both the <strong>Ingress resource</strong> and <strong>Ingress controller</strong> to manage application routing and load balancing.
+                </li>
+                <li>
+                    <span class="highlight">Helm Charts:</span> Utilized Helm to package Kubernetes configurations, simplifying the deployment process.
+                </li>
+                <li>
+                    <span class="highlight">Argo CD:</span> Deployed the application into the Kubernetes cluster using <strong>Argo CD</strong> for GitOps-based continuous delivery.
+                </li>
+                <li>
+                    <span class="highlight">CI/CD Pipeline:</span> Implemented a <strong>CI/CD pipeline</strong> using GitHub Actions and workflows to automate code integration, testing, and deployment.
+                </li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li>Containerization: <span class="highlight">Docker</span></li>
+                <li>Orchestration: <span class="highlight">Kubernetes</span> (EKS)</li>
+                <li>Configuration Management: <span class="highlight">Helm</span></li>
+                <li>Continuous Delivery: <span class="highlight">Argo CD</span></li>
+                <li>CI/CD Automation: <span class="highlight">GitHub Actions</span> and <span class="highlight">GitHub Workflows</span></li>
+                <li>Cloud Provider: <span class="highlight">Amazon Web Services (AWS)</span></li>
+            </ul>
+        </section>
+        
+        <footer>
+            © 2024 Ashraff Sarithala - DevOps Portfolio
+        </footer>
+    </div>
+</body>
+</html>
